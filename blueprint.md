@@ -20,6 +20,7 @@ This project is a web-based platform for visualizing and analyzing historical S&
 *   **Predictive Analysis:** A section presenting data-driven predictions and insights.
 *   **Responsive Design:** The application will be fully responsive and accessible on all devices.
 *   **Dark/Light Mode Toggle:** A button to switch between light and dark themes.
+*   **Affiliation Inquiry Form:** A contact form using Formspree for users to submit affiliation inquiries.
 
 ## Current Plan
 

@@ -45,3 +45,56 @@ footer {
     background-color: var(--header-bg);
     border-top: 1px solid var(--border-color);
 }
+
+/* Affiliation Inquiry Form Styles */
+#affiliation-inquiry {
+    background-color: var(--container-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#affiliation-inquiry h2 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+#affiliation-inquiry form {
+    display: flex;
+    flex-direction: column;
+}
+
+#affiliation-inquiry label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#affiliation-inquiry input[type="text"],
+#affiliation-inquiry input[type="email"],
+#affiliation-inquiry textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--header-bg); /* Use header-bg for input background in light mode */
+    color: var(--text-color);
+}
+
+#affiliation-inquiry textarea {
+    resize: vertical;
+}
+
+#affiliation-inquiry button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#affiliation-inquiry button:hover {
+    background-color: #0056b3;
+}
