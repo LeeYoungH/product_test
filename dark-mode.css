@@ -1,0 +1,20 @@
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode #chart-container,
+body.dark-mode #analysis {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    border-top: 1px solid #333;
+}

@@ -1,16 +1,24 @@
 
+:root {
+    --background-color: #f0f2f5;
+    --text-color: #333;
+    --header-bg: #fff;
+    --container-bg: #fff;
+    --border-color: #ddd;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #fff;
+    background-color: var(--header-bg);
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 main {
@@ -18,14 +26,14 @@ main {
 }
 
 #chart-container {
-    background-color: #fff;
+    background-color: var(--container-bg);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 #analysis {
-    background-color: #fff;
+    background-color: var(--container-bg);
     padding: 20px;
     border-radius: 8px;
 }
@@ -34,6 +42,6 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-    background-color: #fff;
-    border-top: 1px solid #ddd;
+    background-color: var(--header-bg);
+    border-top: 1px solid var(--border-color);
 }

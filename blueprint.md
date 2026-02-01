@@ -19,6 +19,7 @@ This project is a web-based platform for visualizing and analyzing historical S&
 *   **Interactive Chart:** A dynamic chart displaying historical S&P 500 data. Users will be able to zoom, pan, and view detailed information on hover.
 *   **Predictive Analysis:** A section presenting data-driven predictions and insights.
 *   **Responsive Design:** The application will be fully responsive and accessible on all devices.
+*   **Dark/Light Mode Toggle:** A button to switch between light and dark themes.
 
 ## Current Plan
 
