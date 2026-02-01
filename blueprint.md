@@ -1,38 +1,41 @@
-
-# S&P 500 Predictive Analysis Site Blueprint
+# AI Image Classifier: Dog vs. Cat
 
 ## Overview
 
-This project is a web-based platform for visualizing and analyzing historical S&P 500 data, with a focus on providing predictive insights. The application will feature an interactive chart displaying S&P 500 trends and a section dedicated to predictive analysis.
+This project is a web-based application that utilizes a pre-trained machine learning model from Google's Teachable Machine to classify images as either a "Dog" or a "Cat". The application provides a simple and intuitive interface for users to upload an image and receive a real-time prediction with a confidence score.
 
 ## Project Outline
 
 ### Design and Style
 
-*   **Layout:** A modern, single-page layout with a clear visual hierarchy.
-*   **Colors:** A palette of dark blues, grays, and accent colors for data visualization.
-*   **Typography:** Clean, sans-serif fonts for readability.
-*   **Interactivity:** Smooth animations and transitions to enhance user experience.
+*   **Layout:** A modern, single-page, mobile-first layout centered on the user interaction of uploading and classifying an image.
+*   **Color Palette:**
+    *   Primary: ` #3498db` (a friendly blue)
+    *   Background: `#ecf0f1` (a light, clean gray)
+    *   Card/Container: `#ffffff` (white)
+    *   Text: `#2c3e50` (a dark, readable slate color)
+*   **Typography:** 'Roboto' font for its clarity and modern look. Headings are bold and larger to create a clear hierarchy.
+*   **Visuals & Effects:**
+    *   **Drop Shadows:** Soft, deep shadows on the main container to give it a "lifted" or "card" look.
+    *   **Border Radius:** Generous border-radius on containers and buttons for a softer, more modern aesthetic.
+    *   **Transitions:** Smooth transitions on hover effects for interactive elements like buttons.
 
 ### Features
 
-*   **Interactive Chart:** A dynamic chart displaying historical S&P 500 data. Users will be able to zoom, pan, and view detailed information on hover.
-*   **Predictive Analysis:** A section presenting data-driven predictions and insights.
-*   **Responsive Design:** The application will be fully responsive and accessible on all devices.
-*   **Dark/Light Mode Toggle:** A button to switch between light and dark themes.
-*   **Affiliation Inquiry Form:** A contact form using Formspree for users to submit affiliation inquiries.
+*   **Image Uploader:** A user-friendly, styled button for uploading image files (`.jpg`, `.png`, etc.). The standard, unappealing file input is hidden.
+*   **Image Preview:** Once an image is selected, a preview is immediately displayed for the user to see.
+*   **AI Model Integration:**
+    *   Integrates a Teachable Machine image classification model (`https://teachablemachine.withgoogle.com/models/iy_RlrxKc/`).
+    *   The model and its metadata are loaded from the cloud using TensorFlow.js (`tf.js`).
+*   **Real-time Prediction:**
+    *   Classification is triggered automatically upon image upload.
+    *   A "loading" indicator informs the user that the model is processing the image.
+*   **Result Display:** The prediction results (class name, e.g., "Dog" or "Cat") are displayed clearly along with the model's confidence percentage.
 
 ## Current Plan
 
-*   **Phase 1: Foundational Structure**
-    *   Set up the basic HTML structure for the header, main content, and footer.
-    *   Create a placeholder for the interactive chart.
-    *   Add a section for predictive analysis content.
-*   **Phase 2: Styling and Visuals**
-    *   Implement the core CSS styles for layout, typography, and color scheme.
-    *   Design a visually appealing hero section.
-*   **Phase 3: Chart Integration**
-    *   Integrate a JavaScript charting library (e.g., Chart.js).
-    *   Load and display historical S&P 500 data on the chart.
-*   **Phase 4: Predictive Content**
-    *   Populate the predictive analysis section with initial insights.
+The application is functionally complete and meets the initial requirements. Future enhancements could include:
+*   Support for drag-and-drop file uploads.
+*   Displaying both top predictions (if more than two classes existed).
+*   Adding more engaging animations and visual feedback for the prediction results.
+*   Allowing users to test with a live webcam feed as an alternative to file uploads.

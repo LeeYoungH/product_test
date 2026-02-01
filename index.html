@@ -1,49 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S&P 500 Predictive Analysis</title>
+    <title>Dog vs. Cat Classifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dark-mode.css">
 </head>
 <body>
-    <header>
-        <h1>S&P 500 Predictive Analysis</h1>
-        <button id="theme-toggle">Toggle Theme</button>
-    </header>
-    <main>
-        <section id="chart-container">
-            <h2>S&P 500 Historical Data</h2>
-            <div id="chart"></div>
-        </section>
-        <section id="analysis">
-            <h2>Predictive Analysis</h2>
-            <p>Coming soon...</p>
-        </section>
-        <section id="affiliation-inquiry">
-            <h2>Affiliation Inquiry</h2>
-            <form action="https://formspree.io/f/mzdvpoqe" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <div id="app-container">
+        <header>
+            <h1>Is it a Dog or a Cat?</h1>
+            <p>Upload a picture to see the model's prediction.</p>
+        </header>
+        <main>
+            <div id="image-upload-container">
+                <img id="image-preview" src="" alt="Image preview" style="display:none;">
+                <label for="image-upload-input" class="custom-file-upload">
+                    Upload Image
+                </label>
+                <input id="image-upload-input" type="file" accept="image/*" />
+            </div>
+            <div id="prediction-container">
+                <h2>Prediction</h2>
+                <div id="label-container"></div>
+                <p id="loading-message" style="display:none;">Analyzing...</p>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by Teachable Machine & Google</p>
+        </footer>
+    </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="company">Company (optional):</label>
-                <input type="text" id="company" name="company">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Inquiry</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 S&P 500 Predictive Analysis</p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
